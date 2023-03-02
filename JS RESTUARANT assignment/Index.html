@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="Style.css">
+    <title>Hyderabadi Restuarant</title>
+</head>
+<body id="body">
+    <header>
+        <h1>Restaurant Appilication</h1>
+    </header>
+    <div class="class1">
+        <div class="table_div">
+            <h1 style="text-align: center;">Tables</h1>
+            <i class="fad fa-search "id="icon"></i>
+            <input type="search" id="table_search" placeholder="Search table....">
+            <div class="tables"></div>
+        </div> 
+        <div class="menus_box">
+            <h1 style="text-align: center;">Menu</h1>
+            <i class="fad fa-search"id="icon"></i> 
+            <input type="search" id="menu_search" placeholder="Search menu by name or by category....">
+            
+            <div class="menu"></div>
+        </div>
+        <div id="modal" class="modal">
+            <div  class="modal-content">
+                <div class="modal-header">
+                    <h1 id="modal-head"></h1>
+                    <button id="modal_close"><i class="fad fa-2x fa-times-square"></i></button>
+                </div>
+                <div id="modal_body" class="modal-body">
+                    <div class="table" id="table">
+                        <table  style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th>S.no</th>
+                                    <th>Item Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <div class="tbody">
+                                <tbody id="table-body"></tbody>
+                            </div>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="5"><h3>TOTAL : <span id="total"></span></h3></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="bill-button" id="generatebill">Generate Bill</button>
+                </div>
+            </div>
+        </div>
+        <div id="bill_modal" class="bill_modal modal">
+            <div class="bill-modal-content">
+                <div class="modal-header">
+                    <h1>Table <span id="tablenumber"></span> Bill</h1>
+                    <button id="bill_modal_close"><i class="fad fa-2x fa-times-square"></i></button>
+                </div>
+                <div class="modal-body bill-modal-body">
+                    <div class="table" id="bill_table">
+                        <table  style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th>S.no</th>
+                                    <th>Item Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <div class="bill_tbody">
+                                <tbody id="bill_table-body"></tbody>
+                            </div>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4"><h2>Total Amount Paid : </h2></td>
+                                    <td><span id="total-amount"></span></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="bill-button" id="close-bill">Close</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="Script.js"></script>
+</body>
+</html>
