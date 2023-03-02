@@ -404,6 +404,12 @@
         .skill_list div h3{
           text-align: center;
         }
+        .about-image{
+              width:80%;
+        }
+        .project{
+              width:100%;
+        }
 
         .skill_list div:hover{
           color: #2943e8;
