@@ -57,7 +57,7 @@
                         <div class="about_info">
                             
                             <div class="about_img">
-                                <img src="about.svg" width="80%" alt="">
+                                <img src="about.svg" class="about-image" alt="">
                             </div>
                             <div class="about_content">
                                 <h2>Who am i ?</h2>
@@ -96,7 +96,7 @@
             <div class="sec3">
                 <div id="edu" class="edu">
                     <div class="edu_img">
-                        <img src="Study.svg" width="80%" alt="">
+                        <img src="Study.svg" class="about-image" alt="">
                     </div>
                     <div class="edu_content">
                         <div class="btech">
@@ -163,22 +163,22 @@
                         </div>
                     </div>
                     <div class="skill_img">
-                        <img src="Skills.svg" width="80%" alt="">
+                        <img src="Skills.svg" class="about-imgage" alt="">
                     </div>
                 </div>
             </div>
             <div class="sec5">
                 <div id="projects" class="projects">
                     <div class="pro1">
-                        <img width="100%" src="project1.png" alt="">
+                        <img class="project" src="project1.png" alt="">
                         <p>Every year domain training is conducted by SAC . Last year when COVID 19 hit we were in our homes and all the training had happened through online mode.Every week we were assigned some tasks . To submit those tasks , we were given Google forms but it's very hard to estimate how many students have submitted how many tasks and who are doing very well and who are not and at the same time students are unable to know their feedback of the exams or tasks like remarks.</p>
                     </div>
                     <div class="pro2">
-                        <img width="100%" src="project2.png" alt="">
+                        <img class="project" src="project2.png" alt="">
                         <p>There is one committee called grievance commitee in our college which redresses the grievances addressed by student /parent/faculty.since we have grievance cell / faculty feedback tab in our college portal,there have not been any functionalities regarding mail verification , logins ,response,overview of grievances etc . we,therefore implemented the functionalities so that it will be easy for the commitee to address/ reject the grievances based on the criteria and type of grievance .once an account is created ,an account activation mail is sent to the user with user credentials .</p>
                     </div>
                     <div class="pro3">
-                        <img width="100%" src="project3.png" alt="">
+                        <img class="project" src="project3.png" alt="">
                         <p>A Quick and Easy Way to Create Your Professional Resume. All of which can be customized to your liking. Fast and Easy to Use Our resume builder lets you easily and quickly create a resume using our resume wizard. Using resume builder u can design your resume. every one will get a form after logging into the resume builder user need to fill all the required fields in form then user will need to click generate resume then the resume will be generated after generating the resume user can download the resume bu clicking on download resume</p>
                     </div>
                     <div></div>
@@ -221,16 +221,16 @@
     </main>
     <script>
         document.getElementById("send").addEventListener("click",()=>{
-            var name = document.form.name.value;
-            var email = document.form.email.value;
-            var message = document.form.message;
+            let name = document.form.name.value;
+            let email = document.form.email.value;
+            let message = document.form.message;
             alert(`Hi ${name} Thank You for sending your valuable message`);
         })
         function addclass() {
-        var navi = document.getElementById("navbar");
-        var width = document.getElementById("content_scroll");
-        var hmimg = document.getElementById("hmimg");
-        var navw=document.getElementById("navi");
+        let navi = document.getElementById("navbar");
+        let width = document.getElementById("content_scroll");
+        let hmimg = document.getElementById("hmimg");
+        let navw=document.getElementById("navi");
         navi.classList.toggle('active');
         width.classList.toggle("active_width")
         hmimg.style.width="80%";
