@@ -282,3 +282,6 @@ td input{
 #generatebill{
   display: block;
 }
+.table-width{
+  width:100% !important;
+}
